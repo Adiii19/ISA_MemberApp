@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:inventory/src/common_widgets/app_bar.dart';
 import 'package:inventory/src/data/cartcomponent.dart';
 import 'package:inventory/src/features/authentication/controllers/componentController.dart';
 import 'package:inventory/src/features/main_app/cartscreen.dart/cartscreen.dart';
@@ -25,6 +26,7 @@ class _TransactionScreenState extends State<TransactionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: CustomAppBar(),
       body: SingleChildScrollView(
         child: Container(
           height: MediaQuery.of(context).size.height * 1,

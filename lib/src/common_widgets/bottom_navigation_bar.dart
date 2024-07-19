@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ionicons/ionicons.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
   final int currentIndex;
@@ -26,17 +27,17 @@ class CustomBottomNavigationBar extends StatelessWidget {
         BottomNavigationBarItem(
           icon: CircleAvatar(
             backgroundColor: Colors.black,
-            child: Icon(Icons.add, color: Colors.white),
+            child: Icon(Ionicons.barcode_outline, color: Colors.white),
           ),
-          label: 'Add',
+          label: 'Scan'
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.description),
-          label: 'Transaction',
+          label: ' Recent Transactions',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.grid_view),
-          label: 'More',
+          icon: Icon(Ionicons.ribbon_sharp),
+          label: 'Credits',
         ),
       ],
       currentIndex: currentIndex,

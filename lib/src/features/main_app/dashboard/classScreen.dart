@@ -9,7 +9,6 @@ import 'package:inventory/src/data/audiomodules.dart';
 import 'package:inventory/src/data/microControllerList.dart';
 import 'package:inventory/src/data/model.dart';
 import 'package:inventory/src/data/sensors.dart';
-import 'package:inventory/src/features/main_app/components_in_class_screen/component_in_class_screen.dart';
 import 'package:inventory/src/features/main_app/search_screen/search_screen.dart';
 import 'package:inventory/src/features/authentication/controllers/componentController.dart';
 
@@ -103,10 +102,7 @@ class _ClassscreenState extends State<Classscreen> {
                       ),
                       subtitle: Text(
                           'Box No: ${component.boxNo}\nStock: ${component.stock}'),
-                      onTap: () {
-                        Get.to(
-                            () => ComponentInClassScreen(component: component));
-                      }),
+                      ),
                 );
               },
             ),

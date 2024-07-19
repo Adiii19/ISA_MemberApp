@@ -9,6 +9,7 @@ import 'package:inventory/src/features/main_app/add_component/cons_or%20noncons.
 import 'package:inventory/src/features/main_app/dashboard/dashboard_screen.dart';
 import 'package:inventory/src/features/main_app/menu_screen/menu_Screen.dart';
 import 'package:inventory/src/features/main_app/search_screen/search_screen.dart';
+import 'package:inventory/src/features/main_app/thankyou.dart';
 import 'package:inventory/src/features/main_app/transactions_screen/transaction_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -18,8 +19,8 @@ class MainScreen extends StatefulWidget {
   static  List<Widget> _screenOptions = <Widget>[
     Dashboard(),
     SearchScreen(),
-    TransactionScreen(),
     MenuScreen()
+   , Thankyou()
   ];
 
   @override
@@ -35,7 +36,7 @@ class _DashboardState extends State<MainScreen> {
   void _onItemTapped(int index) {
     if (index == 2) {
       // Custom action for the middle "Add" button
-      ConsOrNonCons(context);
+       Navigator.of(context).push(MaterialPageRoute(builder: (context)=>TransactionScreen()));
     } else {
       setState(() {
         _selectedIndex = index >= 2 ? index - 1 : index;
