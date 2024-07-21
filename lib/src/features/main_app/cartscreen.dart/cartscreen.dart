@@ -67,11 +67,11 @@ class _CartscreenState extends State<Cartscreen> {
 
     await supabase
         .from('Transactions')
-        .update({'status': 'Returned'}).eq('memberid', Memberid.text);
+        .update({'status': 'Returned'}).eq('id', Memberid.text);
 
     await supabase
         .from('Transactions')
-        .update({'returndate': Dateformatter()}).eq('memberid', Memberid.text);
+        .update({'returndate': Dateformatter()}).eq('id', Memberid.text);
   }
 
   Future<void> insertCartComponents(String memberid, String name, String Class,
@@ -80,7 +80,7 @@ class _CartscreenState extends State<Cartscreen> {
         cartcomponents.map((co) => co.toJson()).toList();
 
     final data = {
-      'memberid': memberid,
+      'id': memberid,
       'name': name,
       'class': Class,
       'phonenumber': phonenumber,

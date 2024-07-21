@@ -86,7 +86,7 @@ class _TransactionScreenState extends State<TransactionScreen> {
                   child: Text(
                     'Scan to issue component',
                     style: GoogleFonts.lato(
-                      textStyle: TextStyle(
+                      textStyle: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w800,
                         fontSize: 18,
@@ -95,7 +95,7 @@ class _TransactionScreenState extends State<TransactionScreen> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               TextButton(
@@ -138,7 +138,7 @@ class _TransactionScreenState extends State<TransactionScreen> {
                   child: Text(
                     'Scan to return component',
                     style: GoogleFonts.lato(
-                      textStyle: TextStyle(
+                      textStyle: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w800,
                         fontSize: 18,
@@ -147,7 +147,7 @@ class _TransactionScreenState extends State<TransactionScreen> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Expanded(
@@ -164,7 +164,7 @@ class _TransactionScreenState extends State<TransactionScreen> {
                         child: Container(
                           width: MediaQuery.of(context).size.width * 0.8,
                           height: 130,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               color: Color.fromARGB(39, 5, 168, 244),
                               borderRadius: BorderRadius.all(
                                 Radius.circular(16),
@@ -185,7 +185,7 @@ class _TransactionScreenState extends State<TransactionScreen> {
                                           color: Colors.black, fontSize: 20),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 55,
                                     height: 0.2,
                                   ),
@@ -196,15 +196,15 @@ class _TransactionScreenState extends State<TransactionScreen> {
                                               .remove(component);
                                         });
                                       },
-                                      icon: Icon(
+                                      icon: const Icon(
                                         Icons.delete,
                                         color: Colors.red,
                                       ))
                                 ],
                               ),
-                              Row(
+                              const Row(
                                 children: [
-                                  const SizedBox(
+                                  SizedBox(
                                     height: 10,
                                   ),
                                 ],
@@ -220,7 +220,7 @@ class _TransactionScreenState extends State<TransactionScreen> {
                                         style: GoogleFonts.lato(
                                             color: Colors.black, fontSize: 15)),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 20,
                                   ),
                                   Row(
@@ -256,7 +256,7 @@ class _TransactionScreenState extends State<TransactionScreen> {
                       );
                     }),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               TextButton(
@@ -275,7 +275,7 @@ class _TransactionScreenState extends State<TransactionScreen> {
                   child: Text(
                     'View Cart',
                     style: GoogleFonts.lato(
-                      textStyle: TextStyle(
+                      textStyle: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w800,
                         fontSize: 18,
