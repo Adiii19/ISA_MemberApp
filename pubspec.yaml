@@ -49,6 +49,8 @@ dependencies:
   flutter_pdfview: ^1.3.2
   ionicons: ^0.2.2
   shared_preferences: ^2.2.3
+  onesignal_flutter: ^5.2.2
+  http: ^1.2.2
   # syncfusion_flutter_pdfviewer: ^26.1.40
 
 
